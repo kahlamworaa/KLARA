@@ -1,130 +1,83 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Jovita Julia Clara</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website P4 Kota Administrasi Jakarta Timur untuk pelatihan dan pengembangan pendidikan">
+    <meta name="keywords" content="P4, pelatihan, pengembangan pendidikan, Jakarta Timur">
+    <meta name="author" content="Clara">
+    <title>P4 Jakarta Timur</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
+
 <body>
-  <!-- Section 1: Hero -->
-  <section id="home" class="hero">
-    <section id="about" class="about full-section">
-      <div class="container">
-        <img src="IMG_20250123_131150.jpg" alt="Foto Anda" class="background-photo">
-        <h1>Halo, Saya <span class="highlight">Jovita Julia Clara</span></h1>
-        <p class="text-animation">Web Designer | Content Creator | Developer</p>
-      </div>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">P4 Jakarta Timur</div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#programs">Program Pelatihan</a></li>
+                <li><a href="#news">Berita</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di P4 Jakarta Timur</h1>
+            <p>Menyediakan Pelatihan dan Pengembangan Pendidikan Berkualitas</p>
+            <a href="#programs" class="btn">Pelajari Lebih Lanjut</a>
+        </div>
     </section>
-  </section>
 
-  <!-- Section 2: Pengalaman -->
-  <section id="experience" class="experience">
-    <div class="container">
-      <ul>
-        <li class="experience-item">
-            <div class="experience-box">
-              <img src="IMG-20240814-WA0045.jpg" alt="Experience Photo" class="experience-photo">
-              <p>Pengalaman Menjadi Web Developer</p>
+    <!-- Tentang Kami -->
+    <section id="about" class="about">
+        <h2>Tentang Kami</h2>
+        <div class="timeline">
+            <div class="event">
+                <h3>2000</h3>
+                <p>P4 Jakarta Timur didirikan dengan misi meningkatkan kualitas pendidikan.</p>
             </div>
-            <strong>Web Developer</strong> - Membangun website responsif (2023-2024)
-            <button class="btn-explode">Selengkapnya</button>
-        </li>
-        <li class="experience-item">
-            <div class="experience-box">
-              <img src="IMG-20240111-WA0005.jpg" alt="Experience Photo" class="experience-photo">
-              <p>Pengalaman Menjadi Content Creator</p>
+            <div class="event">
+                <h3>2010</h3>
+                <p>Mulai menawarkan program pelatihan bersertifikat untuk guru.</p>
             </div>
-            <strong>Content Creator</strong> - Mengelola konten digital kreatif (2022-2025)
-            <button class="btn-explode">Selengkapnya</button>
-        </li>
-        <li class="experience-item">
-            <div class="experience-box">
-                <img src="IMG-20240902-WA0041.jpg" alt="Experience Photo" class="experience-photo">
-                <p>Pengalaman Menjadi Freelance Designer</p>
-              </div>
-            <strong>Freelance Designer</strong> - Mendesain landing page menarik (2021-2023)
-            <button class="btn-explode">Selengkapnya</button>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Section 3: Passion -->
-  <section id="passion" class="passion">
-    <div class="container">
-      <h2>Passion Saya</h2>
-      <p>Saya sangat menyukai desain modern dan menciptakan pengalaman pengguna yang menarik melalui animasi dan visual interaktif.</p>
-      <div class="skills">
-        <div class="skill">
-          <h3>Web Design</h3>
-          <p>Mengembangkan desain yang responsif dan estetis.</p>
+            <div class="event">
+                <h3>2020</h3>
+                <p>Berinovasi dengan pelatihan berbasis teknologi.</p>
+            </div>
         </div>
-        <div class="skill">
-          <h3>Content Creation</h3>
-          <p>Membuat konten visual kreatif untuk media sosial dan website.</p>
+        <div class="team">
+            <h3>Tim Kami</h3>
+            <div class="team-member">
+                <img src="team1.jpg" alt="Nama Tim">
+                <p>Nama - Direktur</p>
+            </div>
         </div>
-        <div class="skill">
-          <h3>Development</h3>
-          <p>Membangun website dengan HTML, CSS, dan JavaScript.</p>
+    </section>
+
+    <!-- Program Pelatihan -->
+    <section id="programs" class="programs">
+        <h2>Program Pelatihan</h2>
+        <div class="program-list">
+            <div class="program-item">
+                <h3>Pelatihan Guru</h3>
+                <p>Meningkatkan kompetensi guru dalam pengajaran.</p>
+                <button class="btn" onclick="showDetails()">Detail</button>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Section 4: Portfolio -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-      <h2> Portofolio</h2>
-      <div class="projects">
-        <div class="project-card">
-          <img src="IMG_2806.JPG" alt="Proyek 1">
-          <h3>Landing Page Bisnis</h3>
-          <p>Website landing page untuk bisnis kecil.</p>
-        </div>
-        <div class="project-card">
-          <img src="IMG-20240111-WA0005.jpg" alt="Proyek 2">
-          <h3>Portfolio Pribadi</h3>
-          <p>Website portofolio interaktif.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 5: Reviews -->
-  <section id="reviews" class="reviews">
-    <div class="container">
-      <h2>Ulasan</h2>
-      <div class="review-card">
-        <p>"Clara sangat profesional! Saya sangat puas dengan desain website yang dibuat."</p>
-        <h3>- Andi Permana</h3>
-      </div>
-      <div class="review-card">
-        <p>"Portofolionya sangat interaktif dan kreatif. Terima kasih Clara!"</p>
-        <h3>- Bella Kartika</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 6: Kontak -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Kontak Saya</h2>
-      <form action="#" method="post">
-        <input type="text" placeholder="Nama Anda" required>
-        <input type="email" placeholder="Email Anda" required>
-        <textarea placeholder="Pesan Anda" rows="5" required></textarea>
-        <button type="submit">Kirim</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Section 7: Footer -->
-  <footer>
-    <p>&copy; 2025 Jovita Julia Clara. Semua Hak Dilindungi.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 P4 Jakarta Timur. All Rights Reserved.</p>
+    </footer>
 </body>
+
 </html>
